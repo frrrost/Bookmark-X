@@ -7,6 +7,7 @@ on:
   pull_request:
     branches: ["master", "210"]
     paths: ["src/**"]
+  workflow_dispatch:   # allows manual triggering from the Actions tab
 
 permissions:
   contents: read
