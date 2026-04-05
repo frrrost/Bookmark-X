@@ -5,7 +5,7 @@ plugins {
 
 group 'indi.bookmarkx'
 
-version '2.3.4'
+version '2.3.4.1'
 
 repositories {
     mavenLocal()
@@ -32,7 +32,7 @@ intellij {
 
 patchPluginXml {
     sinceBuild = '210.0'
-    untilBuild = "253.*"
+    untilBuild = "261.*"
 
     changeNotes = """
       <ul>
