@@ -45,3 +45,10 @@ jobs:
 
       - name: Build Plugin
         run: ./gradlew buildPlugin --no-daemon
+
+      - name: Upload plugin artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bookmark-x-plugin
+          path: build/distributions/*.zip
+          retention-days: 30
